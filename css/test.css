@@ -1,0 +1,43 @@
+<style type="text/css">
+h1{color:red;
+font-size: 150;
+}
+
+body{
+    background-color: aliceblue;
+    
+}
+    <!this is ruleset styling, if a lot of elements have the same style it is much easier to do it this way-->
+
+
+
+</style>
+
+<style type="text/css">
+h2{font-family:Helvetica;
+    color: darkviolet;
+    }
+    .big{
+font-size: 170px;
+}
+
+
+    .uppercase{
+        text-transform: uppercase;
+    }
+
+    .big.uppercase{
+
+        color: grey;
+
+    }
+
+    h1 span{
+        color: violet;
+
+    }
+</style>
+
+    <!styling individual elememnts and creating classes, and combining them to assign to different elements>
+    
+    <!h1 span... means that only spans inside of h1 will be styled that way>
