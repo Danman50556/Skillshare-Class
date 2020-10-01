@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>CSS GRID</title>
+    
+    <style>
+/*        This customises the settings to be one of grid, then changing the % values makes them interactive and split across the page - you can make spaces with the seperate commands or with grid-gap*/
+/*setting the min max feature means that the sizing is flexible*/
+        .wrapper{
+            display: grid;
+/*            grid-template-columns:1fr 1fr 1fr;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+/*        this sets the background color and padding for all elements in the div */
+    .wrapper div{
+    background-color: lightblue;
+        padding: 1em;
+    }
+/*        this makes every odd element grey*/
+        .wrapper div:nth-child(odd){
+            background-color: grey;
+        }
+        .nested{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+            
+        }
+        
+       
+        .nested div{
+            grid-gap: 10px;
+            border: black 4px solid ;
+            background-color: white;
+            
+        }
+        </style>
+<!--    put the wrapper div around the classes you want to be in columns 
+-->
+    
+</header>
+    
+    
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem Ipsum is simply dummy text 
+
+        </div>
+        
+        <div>
+         It is a long established 
+        </div>
+        <div class="nested">
+<!--            nested means you can have grids in grid-->
+                <div> Lorem Ipsum is simply dlhasl</div> 
+             <div> Lorem Ipsum is simply</div>
+             <div> Lorem Ipsum is simply</div>
+            <div> Lorem Ipsum is simply</div> 
+             <div> Lorem Ipsum is simply</div>
+             <div> Lorem Ipsum is simply</div>
+        </div>
+        
+        <div>
+         It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact 
+        </div>
+        <div>
+         It is a long established fact 
+        </div>
+     
+    </div>
+    
+
+</body>
+
+
+
+
+</html>

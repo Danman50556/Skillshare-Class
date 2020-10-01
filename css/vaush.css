@@ -40,7 +40,8 @@ header p{
 
 header a{
     color: #EFEFEF;
-    text-decoration: none
+    text-decoration: none;
+    
 }
 
 
@@ -78,7 +79,9 @@ main h2{
     text-align:center
 
 }
-
+main li{
+    text-decoration: none;
+}
 main a{
     color: black;
 }
