@@ -76,19 +76,33 @@
         }
         
         .showcase img{
+/*
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
+*/
             width:40%;
-            grid-column: 1/4;
+/*            grid-column: 2;*/
             background-color: blueviolet;
             padding-right: 30%;
             padding-left: 30%;
             padding-top: 20px;
             padding-bottom: 20px;
             
-            
         }
+        
+
+        .caption{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-column: 2;
+            background-color: lightcyan;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            font-family: helvetica;
+            font-weight: bolder;
     
 
     
@@ -115,13 +129,17 @@
 
     
 <main>
-    <div class="showcase">
-    <div class="buffer1"></div>
-    <div class="image">
-    <img src="img/matty.jpg" >
-    </div>
-    <div class="buffer2"></div>
-    </div>
+        <div class="showcase">
+        <div class="buffer1"></div>
+            <div class="image">
+            <img src="img/mask.jpg" >
+                <div class="caption">
+                <div> </div>
+                <div>This is a description of the project.</div>
+                </div>
+            </div>
+        <div class="buffer2"></div>
+        </div>
     
 </main>
     
